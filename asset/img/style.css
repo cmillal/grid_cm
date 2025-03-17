@@ -13,7 +13,7 @@
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 100px 1fr;
     height: 100vh;
-    border: 2px solid black;
+    
     
 }
 
@@ -39,8 +39,21 @@
     flex-direction: column;
 }
 
+.sidebar div {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    align-items: baseline; /* Alineamos los elementos a la línea base */
+    padding: 1px;
+}
+
+.contador {
+    display: inline-block; /* Permite aplicar estilos de ancho y alto si es necesario */
+    color: gray; /* Cambia el color del número */
+    font-size: 0.9em; /* Cambia el tamaño de la fuente */
+    margin-left: 10px; /* Agrega un pequeño margen a la izquierda */
+}
+
 .sidebar p {
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-family: 'Courier New', Courier, monospace
 }
 .main {
     grid-area: main;
